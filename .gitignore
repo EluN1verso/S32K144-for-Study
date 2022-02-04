@@ -51,3 +51,8 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+
+# Personal Ignore
+.gitignore
+_01_S32K144_ADC/Debug_FLASH/*
