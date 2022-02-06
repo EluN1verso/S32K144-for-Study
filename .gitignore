@@ -56,3 +56,7 @@ dkms.conf
 # Personal Ignore
 .gitignore
 _01_S32K144_ADC/Debug_FLASH/*
+_01_S32K144_ADC/include.bak
+_01_S32K144_ADC/Linker_Files.bak
+_01_S32K144_ADC/src.bak
+_01_S32K144_ADC/Startup_Code.bak
