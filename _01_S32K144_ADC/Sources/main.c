@@ -48,7 +48,8 @@ float    adcVoltage;
  */
 float adc0_ch2_read(void)
 {
-    // Initialize adcChannel
+    // Initialize adcChannel 
+    // 0U representing software trigger
     ADC_DRV_ConfigChan(INST_ADCONV1, 0U, &adConv1_ChnConfig0);
     // System Into Suspend to Wait for ADC Conversion to Complete
     ADC_DRV_WaitConvDone(INST_ADCONV1);
@@ -69,7 +70,7 @@ float adc0_ch2_read(void)
  */
 float adc0_ch3_read(void)
 {
-    ADC_DRV_ConfigChan(INST_ADCONV1, 1U, &adConv1_ChnConfig1);
+    ADC_DRV_ConfigChan(INST_ADCONV1, 0U, &adConv1_ChnConfig1);
     ADC_DRV_WaitConvDone(INST_ADCONV1);
     ADC_DRV_GetChanResult(INST_ADCONV1, 1U, &adcRawValue);
     adcVoltage = ((float)adcRawValue / adcMax) * (ADC_VREFH - ADC_VREFL);
