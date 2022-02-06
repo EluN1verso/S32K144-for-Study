@@ -25,6 +25,8 @@
 /* Including necessary module. Cpu.h contains other modules needed for
  * compiling.*/
 #include "Cpu.h"
+#include "clockMan1.h"
+#include "delay.h"
 
 volatile int exit_code = 0;
 
@@ -48,7 +50,7 @@ float    adcVoltage;
  */
 float adc0_ch2_read(void)
 {
-    // Initialize adcChannel 
+    // Initialize adcChannel
     // 0U representing software trigger
     ADC_DRV_ConfigChan(INST_ADCONV1, 0U, &adConv1_ChnConfig0);
     // System Into Suspend to Wait for ADC Conversion to Complete
@@ -86,6 +88,7 @@ float adc0_ch3_read(void)
 int main(void)
 {
     /* Write your local variable definition here */
+    int   MCU_Freq;
     float adc0_ch2_value = 0;
     float adc0_ch3_value = 0;
 /*** Processor Expert internal initialization. DON'T REMOVE THIS CODE!!! ***/
@@ -97,6 +100,7 @@ int main(void)
     // Initialize Clock
     CLOCK_SYS_Init(g_clockManConfigsArr, CLOCK_MANAGER_CONFIG_CNT, g_clockManCallbacksArr, CLOCK_MANAGER_CALLBACK_CNT);
     CLOCK_SYS_UpdateConfiguration(0U, CLOCK_MANAGER_POLICY_AGREEMENT);
+    MCU_Freq = Delay_init();
     // Initialize GPIO
     PINS_DRV_Init(NUM_OF_CONFIGURED_PINS, g_pin_mux_InitConfigArr);
     // Choose adcMax
@@ -119,13 +123,6 @@ int main(void)
         adc0_ch2_value = adc0_ch2_read();
         adc0_ch3_value = adc0_ch3_read();
 
-        // Control GPIO LED on/off on PTD16
-        //        if (adc0_ch2_value > 1.65) {
-        //            PINS_DRV_WritePin(PTD, 16, 0);
-        //        }
-        //        else {
-        //            PINS_DRV_WritePin(PTD, 16, 1);
-        //        }
         // Control GPIO LED on/off on PTD15
         if (adc0_ch3_value > 1.65) {
             PINS_DRV_WritePin(PTD, 15, 0);
@@ -133,11 +130,7 @@ int main(void)
         else {
             PINS_DRV_WritePin(PTD, 15, 1);
         }
-
-        // printf("adc0_ch2_value: %f\n", adc0_ch2_value);
-        // printf("adc0_ch3_value: %f\n", adc0_ch3_value);
-        // printf("\n");
-        // CyDelay(1000);
+        Delay_ms(10);
     }
 
     /*** Don't write any code pass this line, or it will be deleted during code

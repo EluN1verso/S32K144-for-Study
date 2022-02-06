@@ -102,10 +102,10 @@ void Delay_ms(uint32_t ms)
 }
 
 /**
- * @brief Initialize delay frequency
- * @param None
- * @return fact count in one us
- * @note  This function must be called after SystemCoreClockUpdate()
+ * @brief   Initialize delay frequency
+ * @param   None
+ * @return  fact count in one us
+ * @note    This function must be called after SystemCoreClockUpdate()
  *       and before delay_us() or delay_ms()
  */
 int Delay_Init(void)
