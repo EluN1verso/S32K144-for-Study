@@ -58,7 +58,7 @@ void SysTick_Disable(void)
  * @return None
  * @note   This function must be called after SysTick_Init()
  */
-void delay_us(uint32_t us)
+void Delay_us(uint32_t us)
 {
     uint32_t ticks;
     uint32_t told, tnow, tcnt = 0;

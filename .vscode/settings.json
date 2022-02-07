@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.l": "lex",
+        "clockman1.h": "c",
+        "clock_s32k1xx.h": "c"
+    }
+}

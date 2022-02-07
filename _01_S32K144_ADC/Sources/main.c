@@ -27,6 +27,8 @@
 #include "Cpu.h"
 #include "clockMan1.h"
 #include "delay.h"
+#include <S32K144.h>
+#include <clock_S32K1xx.h>
 
 volatile int exit_code = 0;
 
@@ -74,7 +76,7 @@ float adc0_ch3_read(void)
 {
     ADC_DRV_ConfigChan(INST_ADCONV1, 0U, &adConv1_ChnConfig1);
     ADC_DRV_WaitConvDone(INST_ADCONV1);
-    ADC_DRV_GetChanResult(INST_ADCONV1, 1U, &adcRawValue);
+    ADC_DRV_GetChanResult(INST_ADCONV1, 0U, &adcRawValue);
     adcVoltage = ((float)adcRawValue / adcMax) * (ADC_VREFH - ADC_VREFL);
     return adcVoltage;
 }
