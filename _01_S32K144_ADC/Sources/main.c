@@ -24,9 +24,9 @@
 
 /* Including necessary module. Cpu.h contains other modules needed for
  * compiling.*/
-#include "Cpu.h"
 #include "clockMan1.h"
 #include "delay.h"
+#include <Cpu.h>
 #include <S32K144.h>
 #include <clock_S32K1xx.h>
 
