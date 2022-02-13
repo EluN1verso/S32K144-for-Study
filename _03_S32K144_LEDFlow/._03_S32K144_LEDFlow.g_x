@@ -1,0 +1,65 @@
+<CodeGenerationInfo>
+  <ToolchainSettings>
+    <option>
+      <name>PE_G_4PEx_ToolChain_C_Compiler_Includes</name>
+      <values lines_count="7">
+        <Line>"${ProjDirPath}/SDK/platform/drivers/src/clock/S32K1xx"</Line>
+        <Line>"${ProjDirPath}/SDK/rtos/osif/"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/devices"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/devices/common"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/devices/S32K144/include"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/devices/S32K144/startup"</Line>
+        <Line>"${ProjDirPath}/SDK/platform/drivers/inc"</Line>
+      </values>
+    </option>
+    <option>
+      <name>PE_G_4PEx_ilg_gnuarmeclipse_managedbuild_cross_option_c_compiler_defs</name>
+      <values lines_count="1">
+        <Line>"CPU_S32K144_100"</Line>
+      </values>
+    </option>
+  </ToolchainSettings>
+  <GeneratedFilesList>
+    <GeneratedByPE>
+      <File Name="Documentation/_03_S32K144_LEDFlow_Settings.xml" FileDate="2022-02-13, 13:45:43" FileAge="1644731143958" FileType="3072" />
+      <File Name="SDK/platform/devices/status.h" FileDate="2022-02-13, 13:27:39" FileAge="1644730059582" FileType="1048576" />
+      <File Name="SDK/rtos/osif/osif_baremetal.c" FileDate="2022-02-13, 13:45:43" FileAge="1644731143863" FileType="1048576" />
+      <File Name="SDK/platform/devices/common/s32_core_cm4.h" FileDate="2022-02-13, 13:27:39" FileAge="1644730059690" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/pins/pins_gpio_hw_access.h" FileDate="2022-02-13, 13:27:38" FileAge="1644730058958" FileType="1048576" />
+      <File Name="SDK/platform/devices/S32K144/include/S32K144.h" FileDate="2022-02-13, 13:27:39" FileAge="1644730059981" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/clock/S32K1xx/pcc_hw_access.h" FileDate="2022-02-13, 13:27:39" FileAge="1644730059276" FileType="1048576" />
+      <File Name="SDK/platform/drivers/inc/pins_driver.h" FileDate="2022-02-13, 13:27:39" FileAge="1644730059009" FileType="1048576" />
+      <File Name="SDK/platform/devices/callbacks.h" FileDate="2022-02-13, 13:27:39" FileAge="1644730059653" FileType="1048576" />
+      <File Name="Sources/main.c" FileDate="2022-02-13, 13:43:00" FileAge="1644730980615" FileType="128" />
+      <File Name="SDK/platform/drivers/src/pins/pins_driver.c" FileDate="2022-02-13, 13:27:38" FileAge="1644730058905" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/pins/pins_port_hw_access.h" FileDate="2022-02-13, 13:27:39" FileAge="1644730059077" FileType="1048576" />
+      <File Name="SDK/platform/devices/S32K144/startup/system_S32K144.h" FileDate="2022-02-13, 13:27:39" FileAge="1644730059826" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/pins/pins_port_hw_access.c" FileDate="2022-02-13, 13:27:39" FileAge="1644730059035" FileType="1048576" />
+      <File Name="SDK/platform/devices/device_registers.h" FileDate="2022-02-13, 13:27:39" FileAge="1644730059613" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/clock/S32K1xx/smc_hw_access.h" FileDate="2022-02-13, 13:27:39" FileAge="1644730059421" FileType="1048576" />
+      <File Name="SDK/platform/devices/S32K144/include/S32K144_features.h" FileDate="2022-02-13, 13:27:39" FileAge="1644730059911" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.h" FileDate="2022-02-13, 13:27:39" FileAge="1644730059240" FileType="1048576" />
+      <File Name="SDK/platform/devices/S32K144/startup/system_S32K144.c" FileDate="2022-02-13, 13:27:39" FileAge="1644730059866" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.c" FileDate="2022-02-13, 13:27:39" FileAge="1644730059212" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/clock/S32K1xx/sim_hw_access.h" FileDate="2022-02-13, 13:27:39" FileAge="1644730059395" FileType="1048576" />
+      <File Name="Generated_Code/pin_mux.h" FileDate="2022-02-13, 13:45:43" FileAge="1644731143911" FileType="45637" CompNumb="2" />
+      <File Name="SDK/platform/devices/devassert.h" FileDate="2022-02-13, 13:27:39" FileAge="1644730059532" FileType="1048576" />
+      <File Name="Generated_Code/pin_mux.c" FileDate="2022-02-13, 13:45:43" FileAge="1644731143921" FileType="45637" CompNumb="2" />
+      <File Name="SDK/platform/drivers/src/interrupt/interrupt_manager.c" FileDate="2022-02-13, 13:27:39" FileAge="1644730059122" FileType="1048576" />
+      <File Name="SDK/platform/drivers/src/clock/S32K1xx/pmc_hw_access.h" FileDate="2022-02-13, 13:27:39" FileAge="1644730059300" FileType="1048576" />
+      <File Name="SDK/platform/devices/startup.h" FileDate="2022-02-13, 13:27:39" FileAge="1644730059724" FileType="1048576" />
+      <File Name="Documentation/_03_S32K144_LEDFlow.txt" FileDate="2022-02-13, 13:45:44" FileAge="1644731144026" FileType="3072" />
+      <File Name="SDK/platform/devices/startup.c" FileDate="2022-02-13, 13:27:39" FileAge="1644730059770" FileType="1048576" />
+      <File Name="SDK/platform/drivers/inc/clock.h" FileDate="2022-02-13, 13:27:39" FileAge="1644730059461" FileType="1048576" />
+      <File Name="Generated_Code/Cpu.h" FileDate="2022-02-13, 13:45:43" FileAge="1644731143929" FileType="45637" CompNumb="1" />
+      <File Name="SDK/platform/drivers/inc/interrupt_manager.h" FileDate="2022-02-13, 13:27:39" FileAge="1644730059164" FileType="1048576" />
+      <File Name="Generated_Code/Cpu.c" FileDate="2022-02-13, 13:27:39" FileAge="1644730059987" FileType="45637" CompNumb="1" />
+      <File Name="Generated_Code/clockMan1.h" FileDate="2022-02-13, 13:27:40" FileAge="1644730060006" FileType="45637" CompNumb="3" />
+      <File Name="Generated_Code/clockMan1.c" FileDate="2022-02-13, 13:27:40" FileAge="1644730060000" FileType="45637" CompNumb="3" />
+      <File Name="SDK/platform/drivers/src/clock/S32K1xx/scg_hw_access.h" FileDate="2022-02-13, 13:27:39" FileAge="1644730059356" FileType="1048576" />
+      <File Name="SDK/platform/drivers/inc/clock_manager.h" FileDate="2022-02-13, 13:27:39" FileAge="1644730059501" FileType="1048576" />
+      <File Name="SDK/rtos/osif/osif.h" FileDate="2022-02-13, 13:45:43" FileAge="1644731143847" FileType="1048576" />
+    </GeneratedByPE>
+  </GeneratedFilesList>
+  <CodeGenReference>3</CodeGenReference>
+</CodeGenerationInfo>

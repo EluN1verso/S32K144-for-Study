@@ -48,7 +48,7 @@ void SysTick_Disable(void)
 
 /**
  * @brief  Delay us function
- * @param  us Delay time in us
+ * @param  us Delay time count in us
  * @return None
  * @note   This function must be called after SysTick_Init()
  */
@@ -83,7 +83,7 @@ void Delay_us(uint32_t us)
 
 /**
  * @brief  Delay ms function
- * @param  ms Delay time in ms
+ * @param  ms Delay time count in ms
  * @return None
  * @note   This function must be called after SysTick_Init()
  */
